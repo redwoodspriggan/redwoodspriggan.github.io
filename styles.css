@@ -1,0 +1,462 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Caudex", system-ui;
+    font-weight: 300;
+    font-style: normal;
+    scroll-behavior: smooth;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://raw.githubusercontent.com/redwoodspriggan/redwoodspriggan.github.io/refs/heads/main/media/background/Site_Background_03.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.hero {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: rgb(0, 0, 0);
+}
+
+.hero-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0 0 40px 0;
+    text-align: center;
+    color:white;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    background: url('https://raw.githubusercontent.com/redwoodspriggan/redwoodspriggan.github.io/refs/heads/main/media/background/Spacer_02.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 999;
+    color: white;
+}
+
+.navbar a {
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    text-decoration: none;
+    color: inherit;    
+    transition: transform 0.2s ease, content 0.2s ease;
+}
+
+.navbar a:visited,
+.navbar a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar a:hover {
+    transform: scale(1.1);
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+
+.title-block {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: url('https://raw.githubusercontent.com/redwoodspriggan/redwoodspriggan.github.io/refs/heads/main/media/background/Content_09.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 80px;
+    color: white;
+}
+
+.spacer {
+    width: 100%;
+    height: 120px;
+    background: url('https://raw.githubusercontent.com/redwoodspriggan/redwoodspriggan.github.io/refs/heads/main/media/background/Spacer_02.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.spacer-text {
+    position: absolute;
+    margin-top: 45px;
+    margin-left: 31%;
+    margin-right: 31%;
+    color: rgb(218, 218, 218);
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px  1px 0 #000,
+        1px  1px 0 #000;
+    z-index: 10;
+}
+
+.content-block {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: url('https://raw.githubusercontent.com/redwoodspriggan/redwoodspriggan.github.io/refs/heads/main/media/background/Content_09.jpg') no-repeat center center;
+    background-size: 100% auto;
+    background-repeat: repeat;
+    background-position: top center;
+    padding: 110px 40px 30px 40px;
+    color: white;
+}
+
+.content-block-vert {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background: url('https://raw.githubusercontent.com/redwoodspriggan/redwoodspriggan.github.io/refs/heads/main/media/background/Content_09.jpg') no-repeat center center;
+    background-size: 100% auto;
+    background-repeat: repeat;
+    background-position: top center;
+    padding: 80px 40px 30px 40px;
+    color: white;
+}
+
+.short-content {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.justify-even {
+    justify-content: space-evenly;
+}
+
+.content-block h2,
+.content-block-vert h2 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    padding-top: 3px;
+    font-size: 40px;
+}
+
+.content-block h3,
+.content-block-vert h3 {
+    font-size: 30px;
+}
+
+.content-block p {
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 56%;
+}
+
+.content-block-vert p {
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.content-block img,
+.content-block-vert img {
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.center-container {
+    width: 100%;
+    text-align: center;
+}
+
+.portrait-image{
+    width: 32%;
+    height: auto;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.video-wrapper {
+    position: relative;
+    margin-top: 15px;
+    padding-bottom: 56.25%;
+    height: 0;
+    width: 100%;
+    z-index: 2;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.soundcloud-wrapper {
+    padding-top: 28px;
+    width: 100%;
+}
+
+.steam-image-box {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.steam-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.steam-image-box:hover {
+    transform: scale(1.05);
+}
+
+.steam-image-box a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.steam-overlay-text {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow:
+        -4px -4px 0 #000,
+        4px -4px 0 #000,
+        -4px  4px 0 #000,
+        4px  4px 0 #000,
+        -4px  0px 0 #000,
+        4px  0px 0 #000,
+        0px -4px 0 #000,
+        0px  4px 0 #000;
+    pointer-events: none;
+    text-align: center;
+}
+
+.credits-container {
+    width: 100%;
+    display: flex;
+    /* border: 2px solid white; */
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.credits-container h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0;
+    line-height: 1.3;
+    text-align: center;
+    color: white;
+}
+
+.credits-container p {
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+    color: white;
+}
+
+.credits-inner {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.white-line {
+    height: 1px;
+    background-color: white;
+    margin-top: -2%;
+    padding: 0;
+    width: 100%;
+    z-index: 10;
+    position: relative;
+}
+
+.contact-image-box {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    padding-top: 8px;
+    padding-bottom: 20px;
+}
+
+.contact-image-box:hover {
+    transform: scale(1.1);
+}
+
+.contact-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+}
+
+.skill-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.skill-block {
+    width: auto;
+    /*border: 2px solid white;*/
+    height: 52px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 20px;
+}
+
+.skill-block-pt {
+    width: auto;
+    /*border: 2px solid white;*/
+    height: 52px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 20px;
+}
+
+.skill-block:hover img {
+    transform: scale(1.2);
+}
+
+.skill-block img,
+.skill-block-pt img {
+    width: 52px;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.2s ease, content 0.2s ease;
+}
+
+.skill-block p,
+.skill-block-pt p {
+    align-items: center;
+    height: 35%;
+    font-size: 23px;
+    /*user-select: none;*/
+    cursor: default;
+}
+
+a {
+    color: rgb(166, 166, 255);
+}
+
+a:visited {
+    color: rgb(188, 116, 255);
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) { 
+
+    .hero-title {
+        font-size: 45px;
+        white-space: nowrap;
+    }
+
+    .navbar a {
+        font-size: 20px;
+    }
+
+    section {
+        scroll-margin-top: 70px;
+    }
+
+    .credits-container {
+        flex-direction: column;
+    }
+
+    .content-block h2,
+    .content-block-vert h2 {
+        margin-top: 10px;
+        padding-top: 15px;
+        white-space: nowrap;
+    }
+
+    .content-block {
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 90px 20px 30px 20px;
+    }
+
+    .content-block-vert {
+        padding: 75px 20px 30px 20px;
+    }
+
+    .content-block p {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .portrait-image {
+        width: 80%;
+        margin-bottom: 15px;
+    }
+
+    .video-wrapper {
+        padding-bottom: 75%;
+    }
+
+    .spacer-text {
+        margin-top: 35px;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
