@@ -1,4 +1,4 @@
-# aidanaudio.github.io
+# redwoodspriggan.github.io
 
-Welcome to the inner workings of my website!
-I'm probably committing a million web dev sins with this code, so forgive me web developers!
+This is the hub of Spriggan and Essence releases.
+Don't judge my HTML and stuff
